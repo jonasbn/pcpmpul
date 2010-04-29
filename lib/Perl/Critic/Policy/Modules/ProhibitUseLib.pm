@@ -25,7 +25,11 @@ sub violates {
 
     #second token should read: lib
     #See t/test.t for examples of variations
-    $child =~ m/\Alib\Z/ or return;
+    $child =~ m{
+        \A  #beginning of string
+        lib #the word 'lib'
+        \Z  #end of string
+    }xsm or return;
 
     return $self->violation( q{Do not use 'use lib' statements}, $EXPL,
         $child );
