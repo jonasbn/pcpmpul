@@ -5,7 +5,7 @@ package Perl::Critic::Policy::Modules::ProhibitUseLib;
 use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
-use Perl::Critic::Utils qw{ :severities };
+use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
 use version;
 
 our $VERSION = '0.01';
@@ -13,8 +13,8 @@ our $VERSION = '0.01';
 Readonly::Scalar my $EXPL => q{Use PERL5INC environment instead};
 
 use constant supported_parameters => ();
-use constant default_severity     => $Perl::Critic::Utils::SEVERITY_MEDIUM;
-use constant default_themes       => qw(dkhm);
+use constant default_severity     => $SEVERITY_MEDIUM;
+use constant default_themes       => qw(bugs);
 use constant applies_to           => 'PPI::Statement::Include';
 
 sub violates {
