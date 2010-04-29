@@ -18,17 +18,17 @@ use constant default_themes       => qw(bugs);
 use constant applies_to           => 'PPI::Statement::Include';
 
 sub violates {
-  my ($self, $elem, undef) = @_;
+    my ( $self, $elem ) = @_;
 
-  my $child = $elem->schild(1);
-  return if !$child;
-  
-  $child =~ m/\Alib\Z/ or return;
+    my $child = $elem->schild(1);    #second token
+    return if !$child;    #return if no token, this will not be relevant to us
 
-  return $self->violation
-    ("Do not use 'use lib' statements",
-     $EXPL,
-     $child);
+    #second token should read: lib
+    #See t/test.t for examples of variations
+    $child =~ m/\Alib\Z/ or return;
+
+    return $self->violation( q{Do not use 'use lib' statements}, $EXPL,
+        $child );
 }
 
 1;
