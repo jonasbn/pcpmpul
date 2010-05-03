@@ -3,7 +3,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 11;
+use Test::More tests => 12;
 
 use_ok 'Perl::Critic::Policy::Modules::ProhibitUseLib';
 
@@ -25,6 +25,7 @@ foreach my $data (
     [ 1, "use lib q{/some/where/else}" ],
     [ 1, "use lib qq{/some/where/else}" ],
     [ 0, "use library '/some/where/else'" ],
+    [ 0, "use" ], #to satisfy our branch coverage
     )
 {
     my ( $want_count, $str ) = @{$data};
