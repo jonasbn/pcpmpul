@@ -6,7 +6,6 @@ use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
-use version;
 
 our $VERSION = '0.01';
 
@@ -45,11 +44,15 @@ __END__
 
 Perl::Critic::Policy::Modules::ProhibitUseLib
 
+=head1 SYNOPSIS
+
 =head1 VERSION
 
 This documentation describes version 0.01
 
 =head1 DESCRIPTION
+
+=head1 SUBROUTINES/METHODS
 
 The 'use lib' statement, hardcodes the include path to be used. This can give
 issues when moving modules and scripts between diverse environments.
@@ -65,11 +68,13 @@ Instead use the environment variable PERL5LIB
     #tcsh and csh
     setenv PERL5LIB '/some/path/some/where'
 
+=head1 DIAGNOSTICS
+
 =head1 AFFILIATION
 
 This policy is part of L<Perl::Critic::JONASBN> distribution.
     
-=head1 CONFIGURATION
+=head1 CONFIGURATION AND ENVIRONMENT
 
 This Policy is not configurable except for the standard options.
     
