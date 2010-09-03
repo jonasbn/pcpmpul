@@ -18,8 +18,14 @@ my $build = Module::Build->new(
     },
     meta_merge => {
         resources => {
-            homepage => 'http://logicLAB.jira.com/browse/PCPMPUL',
+            homepage => 'http://logiclab.jira.com/wiki/display/PCPMPUL/Home',
+            bugtracker =>
+                'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib',
             repository => 'http://logicLAB.jira.com/svn/PCPMPUL',
+            ProjectChangelog =>
+                'http://logiclab.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel',
+            ProjectSite => 'http://logicLAB.jira.com/browse/PCPMPUL',
+            ProjectWiki => 'http://logiclab.jira.com/wiki/display/PCPMPUL/Home',
         }
     },
 );
