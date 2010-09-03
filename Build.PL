@@ -12,6 +12,7 @@ my $build = Module::Build->new(
     recursive_test_files => 0,
     create_makefile_pl   => 'passthrough',
     create_readme        => 1,
+    dist_abstract        => q[simple policy prohibiting the use of 'use lib'],
     requires => {
         'Data::Dumper' => '0', #Debugging
     },
