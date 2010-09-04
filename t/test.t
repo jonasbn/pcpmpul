@@ -5,12 +5,12 @@ use strict;
 use warnings;
 use Test::More tests => 12;
 
-use_ok 'Perl::Critic::Policy::Modules::ProhibitUseLib';
+use_ok 'Perl::Critic::Policy::logicLAB::ProhibitUseLib';
 
 require Perl::Critic;
 my $critic = Perl::Critic->new(
     '-profile'       => '',
-    '-single-policy' => 'Modules::ProhibitUseLib'
+    '-single-policy' => 'logicLAB::ProhibitUseLib'
 );
 {
     my @p = $critic->policies;

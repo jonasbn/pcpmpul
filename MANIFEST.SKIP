@@ -47,4 +47,4 @@
 ^MANIFEST\.SKIP
 
 # Avoid archives of this distribution
-\bPerl-Critic-JONASBN-[\d\.\_]+
+\bPerl-Critic-Policy-logicLAB-ProhibitUseLib-[\d\.\_]+

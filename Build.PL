@@ -7,7 +7,7 @@ use Module::Build;
 
 my $build = Module::Build->new(
     dist_author          => 'Jonas B. Nielsen, <jonasbn@cpan.org>',
-    module_name          => 'Perl::Critic::Policy::Modules::ProhibitUseLib',
+    module_name          => 'Perl::Critic::Policy::logicLAB::ProhibitUseLib',
     license              => 'artistic',
     recursive_test_files => 0,
     create_makefile_pl   => 'traditional',
@@ -16,7 +16,7 @@ my $build = Module::Build->new(
     requires => {
         'Perl::Critic'        => '0',
         'Perl::Critic::Utils' => '0',
-        'Readonly::Scalar'    => '0',
+        'Readonly'            => '0',
         'Test::More'          => '0',
         'Test::Perl::Critic'  => '0',
     },
