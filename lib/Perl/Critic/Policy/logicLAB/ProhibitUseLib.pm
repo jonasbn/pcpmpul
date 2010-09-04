@@ -1,4 +1,4 @@
-package Perl::Critic::Policy::Modules::ProhibitUseLib;
+package Perl::Critic::Policy::logicLAB::ProhibitUseLib;
 
 # $Id$
 
@@ -42,7 +42,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Modules::ProhibitUseLib
+Perl::Critic::Policy::logicLAB::ProhibitUseLib
 
 =head1 SYNOPSIS
 
@@ -55,7 +55,7 @@ This documentation describes version 0.01
 =head1 SUBROUTINES/METHODS
 
 The 'use lib' statement, hardcodes the include path to be used. This can give
-issues when moving modules and scripts between diverse environments.
+issues when moving logicLAB and scripts between diverse environments.
 
     use lib '/some/path';                                       #not ok
     use lib qw(/you/do/not/want/to/go/down/this/path /or/this); #not ok
@@ -97,7 +97,7 @@ No known incompatibilities.
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
     File                           stmt   bran   cond    sub    pod   time  total
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    ...Modules/ProhibitUseLib.pm  100.0  100.0    n/a  100.0  100.0  100.0  100.0
+    ...logicLAB/ProhibitUseLib.pm  100.0  100.0    n/a  100.0  100.0  100.0  100.0
     Total                         100.0  100.0    n/a  100.0  100.0  100.0  100.0
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
