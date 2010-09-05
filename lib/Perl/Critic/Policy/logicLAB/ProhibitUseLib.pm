@@ -42,9 +42,11 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::logicLAB::ProhibitUseLib
+Perl::Critic::Policy::logicLAB::ProhibitUseLib - simple policy prohibiting the use of 'use lib'
 
-=head1 SYNOPSIS
+=head1 AFFILIATION
+
+This policy is a policy in the L<Perl::Critic::logicLAB> distribution.
 
 =head1 VERSION
 
@@ -52,10 +54,8 @@ This documentation describes version 0.01
 
 =head1 DESCRIPTION
 
-=head1 SUBROUTINES/METHODS
-
 The 'use lib' statement, hardcodes the include path to be used. This can give
-issues when moving logicLAB and scripts between diverse environments.
+issues when moving modules and scripts between diverse environments.
 
     use lib '/some/path';                                       #not ok
     use lib qw(/you/do/not/want/to/go/down/this/path /or/this); #not ok
@@ -68,41 +68,64 @@ Instead use the environment variable PERL5LIB
     #tcsh and csh
     setenv PERL5LIB '/some/path/some/where'
 
-=head1 DIAGNOSTICS
-
-=head1 AFFILIATION
-
-This policy is part of L<Perl::Critic::JONASBN> distribution.
-    
 =head1 CONFIGURATION AND ENVIRONMENT
 
 This Policy is not configurable except for the standard options.
     
 =head1 DEPENDENCIES AND REQUIREMENTS
 
-Please see the specific policies.
+=over
+
+=item * L<Perl::Critic>
+
+=item * L<Perl::Critic::Utils>
+
+=item * L<Readonly>
+
+=item * L<Test::More>
+
+=item * L<Test::Perl::Critic>
+
+=back
 
 =head1 INCOMPATIBILITIES
 
-No known incompatibilities.
+This distribution has no known incompatibilities.
 
 =head1 BUGS AND LIMITATIONS
 
+Currently the policy has no special opinion on L<FindBin>. It only aims to
+address messy, misleading, buggy and obscuring use of 'use lib'.
+
 =head1 BUG REPORTING
 
+Please use Requets Tracker for bug reporting:
+
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib
+
 =head1 TEST AND QUALITY
+
+The following policies have been disabled for this distribution
+
+=over
+
+=item * L<Perl::Crititc::Policy::ValuesAndExpressions::ProhibitConstantPragma>
+
+=item * L<Perl::Crititc::Policy::NamingConventions::Capitalization>
+
+=back
+
+See also F<t/perlcriticrc>
 
 =head2 TEST COVERAGE
 
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
     File                           stmt   bran   cond    sub    pod   time  total
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    ...logicLAB/ProhibitUseLib.pm  100.0  100.0    n/a  100.0  100.0  100.0  100.0
-    Total                         100.0  100.0    n/a  100.0  100.0  100.0  100.0
+    ...ogicLAB/ProhibitUseLib.pm  100.0   50.0    n/a  100.0  100.0  100.0   95.3
+    Total                         100.0   50.0    n/a  100.0  100.0  100.0   95.3
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
-
-=head1 TODO
-
+    
 =head1 SEE ALSO
 
 =over
@@ -122,5 +145,9 @@ No known incompatibilities.
 =back
 
 =head1 LICENSE AND COPYRIGHT
+
+Copyright (c) 2009-2010 Jonas B. Nielsen. All rights reserved.
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
