@@ -101,7 +101,7 @@ address messy, misleading, buggy and obscuring use of 'use lib'.
 
 Please use Requets Tracker for bug reporting:
 
-    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-ProhibitUseLib
 
 =head1 TEST AND QUALITY
 
@@ -134,6 +134,8 @@ See also F<t/perlcriticrc>
 
 =item * L<http://logiclab.jira.com/wiki/display/OPEN/Development#Development-MakeyourComponentsEnvironmentAgnostic>
 
+=item * L<http://logicLAB.jira.com/wiki/display/PCPMPUL/Home>
+
 =back
 
 =head1 AUTHOR
@@ -146,7 +148,7 @@ See also F<t/perlcriticrc>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009-2010 Jonas B. Nielsen. All rights reserved.
+Copyright (c) 2009-2011 Jonas B. Nielsen. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
