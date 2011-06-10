@@ -13,7 +13,7 @@ Readonly::Scalar my $EXPL => q{Use PERL5LIB environment instead};
 
 use constant supported_parameters => ();
 use constant default_severity     => $SEVERITY_MEDIUM;
-use constant default_themes       => qw(maintenance);
+use constant default_themes       => qw(logiclab);
 use constant applies_to           => 'PPI::Statement::Include';
 
 sub violates {
