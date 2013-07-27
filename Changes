@@ -17,6 +17,15 @@ http://logicLAB.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.sy
   
   https://logiclab.jira.com/browse/PCPMPUL-10
 
+- Perl::Critic boiler plate updated to latest version [PCPMPUL-6]
+
+  https://logiclab.jira.com/browse/PCPMPUL-6
+
+- Changes Perl::Critic theme to logicLAB as default [PCPMPUL-7]
+
+  https://logiclab.jira.com/browse/PCPMPUL-7
+
+
 0.01 2010-09-07
 
 - Initial release
