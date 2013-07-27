@@ -1,0 +1,22 @@
+Changes file for Perl::Critic::Policy::logicLAB::ProhibitUseLib
+
+$Id$
+
+Project change log:
+http://logicLAB.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel
+
+0.02 2013-07-27 
+
+- Update not required
+
+- Fixed up Changes file as part of my Questhub quest adhering to the standard
+  described in: CPAN::Changes::Spec [PCPMPUL-10]
+
+  Quest: http://questhub.io/realm/perl/quest/51f0fd8e18ba7dcf4b000040
+  Spec: https://metacpan.org/module/CPAN::Changes::Spec
+  
+  https://logiclab.jira.com/browse/PCPMPUL-10
+
+0.01 2010-09-07
+
+- Initial release
