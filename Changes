@@ -5,6 +5,14 @@ $Id$
 Project change log:
 http://logicLAB.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel
 
+HEAD
+
+- Added changes.t automatic assertion of the integrity of the Changes file, 
+  see also PCPMPUL-10 [PCPMPUL-11]
+
+  https://logiclab.jira.com/browse/PCPMPUL-11
+
+
 0.02 2013-07-27 
 
 - Update not required
