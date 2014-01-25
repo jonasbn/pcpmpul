@@ -23,7 +23,7 @@ my $build = Module::Build->new(
     meta_merge => {
         resources => {
             homepage => 'http://logiclab.jira.com/wiki/display/PCPMPUL/Home',
-            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib',
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-Poilcy-logicLAB-Prohibit-UseLib',
             repository => 'https://github.com/jonasbn/pcpmpul',
             ProjectChangelog =>
                 'http://logiclab.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel',
