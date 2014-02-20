@@ -48,3 +48,6 @@
 
 # Avoid archives of this distribution
 \bPerl-Critic-Policy-logicLAB-ProhibitUseLib-[\d\.\_]+
+
+# Github - Travis integration
+\.travis\.yml
