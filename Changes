@@ -9,6 +9,8 @@ http://logicLAB.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.sy
 
 - Maintenance release, update not required
 
+- Specified Module::Build version to be 0.40 as hinted by Module::Build
+
 - Specified requirement for Perl version 5.8.0
 
 - Added changes.t automatic assertion of the integrity of the Changes file,
