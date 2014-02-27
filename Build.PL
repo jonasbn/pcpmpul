@@ -13,6 +13,7 @@ my $build = Module::Build->new(
     create_makefile_pl   => 'traditional',
     create_readme        => 1,
     dist_abstract        => q[simple policy prohibiting the use of 'use lib'],
+    configure_requires => { 'Module::Build' => 0.40 },
     requires => {
         'Perl::Critic'        => '0',
         'Perl::Critic::Utils' => '0',
