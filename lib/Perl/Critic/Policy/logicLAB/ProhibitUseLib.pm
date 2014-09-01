@@ -43,7 +43,7 @@ __END__
 
 =begin markdown
 
-[![CPAN version](https://badge.fury.io/pl/Perl-Critic-logicLAB-ProhibitUseLib.svg)](http://badge.fury.io/pl/Perl-Critic-logicLAB-ProhibitUseLib)
+[![CPAN version](https://badge.fury.io/pl/Perl-Critic-Policy-logicLAB-ProhibitUseLib.svg)](http://badge.fury.io/pl/Perl-Critic-Policy-logicLAB-ProhibitUseLib)
 [![Build Status](https://travis-ci.org/jonasbn/pcpmpul.svg?branch=master)](https://travis-ci.org/jonasbn/pcpmpul)
 [![Coverage Status](https://coveralls.io/repos/jonasbn/pcpmpul/badge.png)](https://coveralls.io/r/jonasbn/pcpmpul)
 
