@@ -1,12 +1,10 @@
 package Perl::Critic::Policy::logicLAB::ProhibitUseLib;
 
-# $Id$
-
 use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
-use 5.008; #5.8.0
+use 5.008;    #5.8.0
 
 our $VERSION = '0.03';
 
