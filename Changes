@@ -1,6 +1,6 @@
 Changes file for Perl::Critic::Policy::logicLAB::ProhibitUseLib
 
-0.04 2015-08-21 Maintenance release, update not required
+0.04 2015-08-22 Maintenance release, update not required
 
 - Migrated from Module::Build to Dist::Zilla
 
