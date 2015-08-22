@@ -6,7 +6,7 @@ use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
 use 5.008;    #5.8.0
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 Readonly::Scalar my $EXPL => q{Use PERL5LIB environment instead};
 
