@@ -4,7 +4,7 @@ Changes file for Perl::Critic::Policy::logicLAB::ProhibitUseLib
 
 - Migrated from Module::Build to Dist::Zilla
 
-- Updated from artistic license 1.0 to artistic license 2.0
+- Updated from perl (artistic 1.0) license to artistic license 2.0
 
 
 0.03 2014-02-27 Maintenance release, update not required
