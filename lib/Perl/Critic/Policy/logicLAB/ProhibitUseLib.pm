@@ -155,8 +155,8 @@ See also F<t/perlcriticrc>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009-2014 Jonas B. Nielsen. All rights reserved.
+Copyright (c) 2009-2015 Jonas B. Nielsen. All rights reserved.
 
-This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+Perl::Critic::Policy::logicLAB::ProhibitUseLib is released under the Artistic License 2.0
 
 =cut
